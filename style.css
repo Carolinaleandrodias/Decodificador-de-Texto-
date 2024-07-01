@@ -1,15 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+.texto__imagem{
+    margin: 30px;
+    flex-direction: column;
+    display: flex;
+    
+}
 
 body{
+    margin: 0;
     background: #F3F5FC;
+    display: flex;
+}
+
+.container__input{
+    background: #bc1671;
+    width: 70%;
+    height: 100%;
 }
 
 .texto__inicial{
     padding-left: 15%;
     height: 50vh;
-    
 }
+
 
 
 /* mexendo na caixa de escrita */
@@ -26,6 +40,7 @@ textarea {
     font-family: "Inter", sans-serif;
     font-size: 32px;
     color: #0A3871;
+    
 
   }
 
@@ -34,51 +49,105 @@ textarea {
 
 }
   
-
   /* colocar cor no bloco */
   textarea:valid {
     border-color: #F3F5FC;
     background-color: #F3F5FC;
 }  
 
+.texto__informacao__input{
+    padding-left: 15%;
+}
+
+.texto__informacao{
+    display: flex;
+    
+}
+
+.imagem__exclamacao{
+    width: 1vw;
+    height: 2vh;
+    margin-top: 1vh;
+    padding: 0.5vh;
+}
+
+.texto__subTexto{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    padding-left: 0.3%;
+    
+    color: #495057;
+    
+}
+
 
 .texto_botao__decodificar{
     font-family: "Inter", sans-serif;
+    color: white;
     font-size: 16px;
     border-radius: 24px;
     padding: 10px 30px;
+    background-color: #0A3871;
+    width: 24%;
+    height: 67px;
+    cursor: pointer;
+    border: 1px solid #0A3871;
 
 }
 
 .texto__botao__criptografar{
     font-family: "Inter", sans-serif;
+    color: #0A3871;
+    width: 24%;
+    height: 67px;
     font-size: 16px;
     border-radius: 24px;
     padding: 10px 30px;
+    background-color: #D8DFE8;
+    cursor: pointer;
+    border: 1px solid #0A3871;
+
 }
-.texto__subTexto{
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-    padding-left: 2%;
-    color: #495057;
-    margin-top: 50px;
-}
+.texto__botao__criptografar:hover{
+    background-color: #2980b9;
 
 
-.texto__imagem{
-    margin: 30px;
-    flex-direction: column;
-    display: flex;
-    
-    
-    
-    
 }
 
-.texto__resultado {
+.container__resultado{
+    background: #a859cd;
+    width: 30%;
+    
+    
 
+}
+
+.texto__resultado{
+    background: #d3a008;
+    height: 70%;
+    
 }
 
 .texto__digitacao{
+    background: #1e6c4a;
 
+}
+/* responsividade do site */
+@media (max-width: 1200px){
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }

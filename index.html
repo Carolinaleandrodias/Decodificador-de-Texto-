@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-    <header class="texto">
-        <img src="./src/Frame 6.png" alt="Logo alura" class="texto__imagem">
-    </header>
-    <div class="texto__container"> 
-        <div class="texto__inicial">
-            
-            <textarea id="texto__inicial__input" placeholder="Digite seu texto"></textarea>
-        </div>
-       
-        <div>
-            
-            <h2 class="texto__subTexto">Apenas letras minúsculas e sem acento.</h2>
-            <button class="texto_botao__decodificar">Decodificar</button>
-            <button class="texto__botao__criptografar">Criptografar</button>
-            
+<body> 
+    <div class="container__input"> 
+        <header class="texto">
+            <img src="./src/Frame 6.png" alt="Logo alura" class="texto__imagem">
+        </header>
+        <div class="texto__container"> 
+            <div class="texto__inicial">
+                
+                <textarea id="texto__inicial__input" placeholder="Digite seu texto"></textarea>
+            </div>
+        
+            <div class="texto__informacao__input">
+                <div class="texto__informacao"> 
+                    <img src="./src/exclamacao.png" alt="Exclamação" class="imagem__exclamacao">
+                    <h2 class="texto__subTexto">Apenas letras minúsculas e sem acento.</h2>
+                </div>
+                <button class="texto_botao__decodificar">Decodificar</button>
+                <button class="texto__botao__criptografar">Criptografar</button>
+            </div>
         </div>
     </div>
-    <div class="texto__container__resultado">
+
+    <div class="container__resultado">
         <div class="texto__resultado">Nenhuma mensagem encontrada</div>
         <div class="texto__digitacao">Digite um texto que você deseja criptografar ou descriptografar.</div>
     </div>
