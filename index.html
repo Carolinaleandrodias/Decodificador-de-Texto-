@@ -15,7 +15,8 @@
         <div class="texto__container"> 
             <div class="texto__inicial">
                 
-                <textarea id="texto__inicial__input" placeholder="Digite seu texto"></textarea>
+                
+                <textarea id="input-texto" placeholder="Digite seu texto aqui"></textarea>
             </div>
         
             <div class="texto__informacao__input">
@@ -23,17 +24,25 @@
                     <img src="./src/exclamacao.png" alt="Exclamação" class="imagem__exclamacao">
                     <h2 class="texto__subTexto">Apenas letras minúsculas e sem acento.</h2>
                 </div>
-                <button class="texto__botao__criptografar">Criptografar</button>
-                <button class="texto_botao__decodificar">Decodificar</button>
+
+                <div class="buttons">
+                    <button onclick="criptografar()" class="texto__botao__criptografar" id="texto__botao__criptografar">Criptografar</button>
+                    <button  onclick="decodificar()" class="texto_botao__decodificar">Decodificar</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container__resultado">
+
+    <div class="container__resultado" id="container__resultado">
         <img src="./src/desenho.jpg" alt="Desenho" class="imagem__desenho">
-        <div class="texto__resultado">Nenhuma mensagem encontrada</div>
-        <div class="texto__digitacao">Digite um texto que você deseja criptografar ou descriptografar.</div>
+        <div id="texto__resultado" class="texto__resultado">Nenhuma mensagem encontrada</div>
+        <span class="texto__digitacao">Digite um texto que deseja criptografar ou descriptografar.</span>
+       
+        
+
+       
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
