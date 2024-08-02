@@ -187,6 +187,30 @@ textarea {
     width: 30%;
     height: 67px;
     cursor: pointer;
-    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+}
+
+#output {
+    font-family: "Inter", sans-serif;
+    color: #0A3871;
+    font-size: 24px;
+    width: 300px;
+    height: 450px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.botao-copiar {
+    font-family: "Inter", sans-serif;
+    color: #0A3871;
+    align-items: center;
+    width: 70%;
+    height: 67px;
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 1px solid #899cb4;
     background-color: #D8DFE8;
 }
